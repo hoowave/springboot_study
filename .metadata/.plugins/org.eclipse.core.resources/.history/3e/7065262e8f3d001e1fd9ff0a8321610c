@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>장상훈 포트폴리오</title>
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row my-3 mb-5">
+			<div class="col"></div>
+			<div class="col-6">
+				<div class="text-center">
+					<h1>Junior Backend Developer SangHoon</h1>
+				</div>
+			</div>
+			<div class="col"></div>
+		</div>
+		<div class="row">
+			<div class="col"></div>
+			<div class="col-9">
+				<h3>Portfolio</h3>
+				<p class="fs-6">키보드 입력으로 자세히 확인할 수 있어요.</p>
+				<hr>
+			</div>
+			<div class="col"></div>
+		</div>
+		<div class="swiper mySwiper w-100 mb-5" style="height: 700px">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="swiper step1 w-75" style="height: 700px">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/1-1.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/1-2.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/1-3.jpg">
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper step2 w-75" style="height: 700px">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/2-1.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/2-2.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/2-3.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/2-4.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/2-5.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/2-6.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/2-7.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/2-8.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/2-9.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/2-10.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/2-11.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/2-12.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/2-13.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/2-14.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/2-15.jpg">
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper step3 w-75" style="height: 700px">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/3-1.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/3-2.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/3-3.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/3-4.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/3-5.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/3-6.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/3-7.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/3-8.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/3-9.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/3-10.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/3-11.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/3-12.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/3-13.jpg">
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper step4 w-75" style="height: 700px">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/4-1.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/4-2.jpg">
+							</div>
+							<div class="swiper-slide">
+								<img class="w-100 h-100" src="/image/4-3.jpg">
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<div class="row">
+			<div class="col"></div>
+			<div class="col-9">
+				<h3>Comment</h3>
+				<p class="fs-6">방명록을 달아주세요.</p>
+				<hr>
+			</div>
+			<div class="col"></div>
+		</div>
+
+		<div class="row">
+			<div class="col"></div>
+			<div class="col-8">
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col" style="width: 25%">작성자</th>
+							<th scope="col" style="width: 50%">내용</th>
+							<th scope="col" style="width: 25%">작성일시</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="product : ${productList}">
+		<td th:text="${product.seq}"></td>
+		<td th:text="${product.name}"></td>
+		<td th:text="${product.price}"></td>
+		<td th:text="${product.quantity}"></td>
+	</tr>
+						<tr>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<td>Larry the Bird</td>
+							<td>Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="row g-3 align-items-center mb-3">
+					<div class="col-auto">
+						<label for="writer" class="col-form-label">작성자</label>
+					</div>
+					<div class="col-auto">
+						<input type="text" id="writer" name="writer" class="form-control">
+					</div>
+					<div class="col-auto">
+						<label for="writer" class="col-form-label">비밀번호</label>
+					</div>
+					<div class="col-auto">
+						<input type="password" id="password" name="password"
+							class="form-control">
+					</div>
+					<div class="col-auto">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="secret"> <label class="form-check-label"
+								for="secret">비밀방명록</label>
+						</div>
+					</div>
+				</div>
+				<div class="row g-3 align-items-center mb-3">
+					<div class="col-auto">
+						<label for="writer" class="col-form-label">내용</label>
+					</div>
+					<div class="col-8">
+						<input type="text" id="content" name="content"
+							class="form-control">
+					</div>
+					<div class="col-auto">
+						<button type="button" class="btn btn-outline-success"
+							onclick="insert()">방명록 작성</button>
+					</div>
+				</div>
+			</div>
+			<div class="col"></div>
+		</div>
+
+	</div>
+</body>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/jquery.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script>
+	var swiper = new Swiper(".mySwiper", {
+		slidesPerView : 1,
+		spaceBetween : 30,
+		keyboard : {
+			enabled : true,
+		},
+		pagination : {
+			el : ".swiper-pagination",
+			clickable : true,
+		},
+	});
+
+	var step1 = new Swiper(".step1", {
+		direction : "vertical",
+		slidesPerView : 1,
+		spaceBetween : 30,
+		keyboard : {
+			enabled : true,
+		},
+		pagination : {
+			el : ".swiper-pagination",
+			clickable : true,
+		},
+	});
+
+	var step2 = new Swiper(".step2", {
+		direction : "vertical",
+		slidesPerView : 1,
+		spaceBetween : 30,
+		keyboard : {
+			enabled : true,
+		},
+		pagination : {
+			el : ".swiper-pagination",
+			clickable : true,
+		},
+	});
+
+	var step3 = new Swiper(".step3", {
+		direction : "vertical",
+		slidesPerView : 1,
+		spaceBetween : 30,
+		keyboard : {
+			enabled : true,
+		},
+		pagination : {
+			el : ".swiper-pagination",
+			clickable : true,
+		},
+	});
+
+	var step4 = new Swiper(".step4", {
+		direction : "vertical",
+		slidesPerView : 1,
+		spaceBetween : 30,
+		keyboard : {
+			enabled : true,
+		},
+		pagination : {
+			el : ".swiper-pagination",
+			clickable : true,
+		},
+	});
+
+	function insert() {
+		let secret;
+		if ($('#secret').is(':checked')) {
+			secret = "Y";
+		} else {
+			secret = "N";
+		}
+		$.ajax({
+			url : '/insert',
+			type : "post",
+			data : {
+				writer : $('#writer').val(),
+				content : $('#content').val(),
+				password : $('#password').val(),
+				secret_yn : secret
+			},
+			success : function(result) {
+				if (result == '200') {
+					alert("댓글 삭제가 완료되었습니다.");
+					loadcomment($("#comment_load").attr("bno"), 1);
+				} else {
+					alert("ERROR! 관리자에게 문의주세요.");
+				}
+			},
+			error : function(xhr, status, error) {
+				alert("ERROR xhr :" + xhr + ", status : " + status
+						+ ", error :" + error);
+			}
+		})
+	}
+</script>
+</html>

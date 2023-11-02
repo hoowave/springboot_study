@@ -1,0 +1,17 @@
+package com.study.mybbs;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.study.mybbs.dao.IMybbsDao;
+
+@Controller
+public class MyController {
+	
+	IMybbsDao dao;
+
+	@RequestMapping("/")
+	public String root() {
+		return "main";
+	}
+}

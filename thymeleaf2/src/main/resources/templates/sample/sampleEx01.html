@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 th:text="${title}"></h1>
+	<hr>
+	<h2>[[${subTitle}]]</h2>
+	<form action="/sample/reg" method="post" th:object="${product}">
+		<p>
+			pname : <input type="text" th:field="*{pname}">
+		</p>
+		<p>
+			price : <input type="text" th:field="*{price}">
+		</p>
+		<p>
+			<input type="submit" value="전송">
+		</p>
+	</form>
+</body>
+</html>

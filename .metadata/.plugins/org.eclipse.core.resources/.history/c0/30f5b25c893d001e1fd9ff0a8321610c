@@ -1,0 +1,8 @@
+package com.study.springboot.dto;
+
+public class Snippet {
+	public static void main(String[] args) {
+		insert
+	}
+}
+

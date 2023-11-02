@@ -1,0 +1,5 @@
+package com.study.mybbs.dao;
+
+public interface IMybbsDao {
+
+}

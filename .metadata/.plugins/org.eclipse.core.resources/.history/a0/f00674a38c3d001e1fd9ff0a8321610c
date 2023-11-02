@@ -1,0 +1,22 @@
+package com.study.springboot.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.study.springboot.dao.ICommentDAO;
+import com.study.springboot.dto.CommentDTO;
+
+@Controller
+public class CommentController {
+
+	@Autowired
+	ICommentDAO dao;
+
+	@RequestMapping("/insert")
+	public String insert(CommentDTO dto) {
+		System.out.println(dto.toString());
+		dao.insertDao(dto)
+		return "index.html";
+	}
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.study.springboot.dao.ISimpleBbsDao">
+	<select id="listDao"
+		resultType="com.study.springboot.dto.SimpleBbsDto">
+		SELECT * FROM simple_bbs
+	</select>
+	<select id="listDao2"
+		resultType="com.study.springboot.dto.SimpleBbsDto">
+		SELECT * FROM simple_bbs
+		<if test="writer != null">
+			WHERE writer=#{writer}
+		</if>
+	</select>
+	<select id="listDao3"
+		resultType="com.study.springboot.dto.SimpleBbsDto">
+		<bind name="str" value="'%' + dto.getWriter() + '%'"></bind>
+		SELECT * FROM simple_bbs
+		<where>
+			<if test="dto.writer != null">
+				writer like #{str}
+			</if>
+			<if test="dto.title != null">
+				AND title like '%{dto.title}%'
+			</if>
+		</where>
+	</select>
+	<select id="listDao4"
+		resultType="com.study.springboot.dto.SimpleBbsDto">
+		SELECT * FROM simple_bbs
+		<where>
+			<foreach collection="list" item="item" open="id IN ("
+				close=")" separator=",">
+				#{item}
+			</foreach>
+		</where>
+	</select>
+	<select id="viewDao"
+		resultType="com.study.springboot.dto.SimpleBbsDto">
+		SELECT * FROM simple_bbs WHERE id=#{param1}
+	</select>
+	<insert id="writeDao">
+		INSERT INTO simple_bbs (writer,title,content)
+		VALUES
+		(#{param1},#{param2},#{param3})
+	</insert>
+	<insert id="writeDao2" parameterType="java.util.HashMap">
+		INSERT INTO simple_bbs
+		(writer,title,content)
+		VALUES
+		(#{writer},#{title},#{content})
+		<selectKey resultType="string" keyProperty="id"
+			order="AFTER">
+			SELECT LAST_INSERT_ID()
+		</selectKey>
+	</insert>
+	<delete id="deleteDao">
+		DELETE FROM simple_bbs WHERE id=#{param1}
+	</delete>
+</mapper>

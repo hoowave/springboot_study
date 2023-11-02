@@ -1,0 +1,16 @@
+package com.study.springboot.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.study.springboot.dto.CommentDTO;
+
+@Controller
+public class CommentController {
+
+	@RequestMapping("/insert")
+	public String insert(CommentDTO dto) {
+		System.out.println(dto.toString());
+		return "/";
+	}
+}

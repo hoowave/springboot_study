@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Proudct Info Page</h1>
+	<hr>
+	<p th:text="${product.pno}"></p>
+	<p th:text="${#numbers.formatInteger(product.pno,5)}"></p>
+	<p>[[${product.pname}]]</p>
+	<p th:text="${product.price}"></p>
+	<p th:text="${#numbers.formatInteger(product.price,3,'COMMA')}"></p>
+	<p th:text="${product.regdate}"></p>
+	<p th:text="${#temporals.format(product.regdate, 'yyyy-mm-dd HH:mm:ss')}"></p>
+</body>
+</html>

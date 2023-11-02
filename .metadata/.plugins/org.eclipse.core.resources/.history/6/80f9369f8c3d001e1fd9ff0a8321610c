@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.study.springboot.dao.ICommentDAO">
+	<select id="listdao"
+		resultType="com.study.springboot.dto.CommentDTO">
+		SELECT * FROM tbl_comment
+	</select>
+	<select id="insertDao"
+		resultType="com.study.springboot.dto.CommentDTO">
+		INSERT INTO tbl_comment
+		VALUES(NULL,#{writer },#{content },#{password },#{secret_yn
+		},"N",NOW());
+	</select>
+	<select id="deleteDAO"
+		resultType="com.study.springboot.dto.CommentDTO">
+		SELECT * FROM simple_bbs WHERE id=#{param1 }
+	</select>
+</mapper>

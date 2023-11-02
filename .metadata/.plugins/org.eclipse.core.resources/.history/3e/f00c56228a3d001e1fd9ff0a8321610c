@@ -1,0 +1,13 @@
+package com.study.springboot.dao;
+
+import java.util.List;
+
+import com.study.springboot.dto.CommentDTO;
+
+public interface ICommentDAO {
+	public List<CommentDTO> listdao();
+
+	public int writerDao(String writer, String title, String content);
+
+	public int deleteDao(String id);
+}
